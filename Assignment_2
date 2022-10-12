@@ -1,0 +1,91 @@
+Q1.What are the two values of the Boolean data type? How do you write them?
+ANS:
+1) True - It is used to check expression is True.
+2) False - It is used to check expression is False.
+
+
+Q2. What are the three different types of Boolean operators?
+ANS:
+1) Not
+2) And
+3) Or
+
+Q4. What are the values of the following expressions?
+ANS:
+(5 >4) and (3 == 5)                      False
+not (5> 4)                               False                      
+(5>4) or (3 == 5)                        True
+not ((5>4) or (3 == 5))                  False
+(True and True) and (True == False)      False
+(not False) or (not True)                True
+
+Q5. What are the six comparison operators?
+ANS:
+<
+<=
+>
+>=
+==
+!=
+
+Q6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+ANS:
+Assignment operator is used to assign a values to variable or constants and equal to operator used to check given values equal or not.
+
+
+Q7. Identify the three blocks in this code:
+ANS:
+The three blocks are everything inside the if statement and the lines print('bacon') and print('ham').
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+
+
+Q8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+ANS:
+
+spam = int(input())
+
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howdy')
+else:
+    print('Greetings!')
+    
+    
+Q9.If your programme is stuck in an endless loop, what keys you’ll press?
+ANS:
+ctrl+c
+
+Q10. How can you tell the difference between break and continue?
+ANS:
+break statement used to break the loop and continue statement used to skip a sequence.
+
+
+Q11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+ANS:
+Nothing
+
+Q12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+ANS:
+for i in ranhge(1, 11):
+    print(i)
+    
+Using while loop
+    
+i = 1
+while(i<=10):
+    print(i)
+    i++
+    
+    
+Q13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+ANS:
+spam.bacon()
+
