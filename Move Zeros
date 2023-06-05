@@ -1,0 +1,13 @@
+Q: Move Zeroes
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Ans: 
+
+def fun(a):
+    for i in a:
+        if i==0:
+            a.remove(i)
+            a.append(0)
+    return a
+    
+print(fun([0,1,0,3,12]))
