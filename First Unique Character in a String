@@ -1,0 +1,12 @@
+Q. First Unique Character in a String
+
+Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
+
+Ans:
+def fun(a):
+    for i in a:
+        if a.count(i)==1:
+            return a.index(i)
+    return -1
+    
+print(fun("leetcode"))
