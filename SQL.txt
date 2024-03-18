@@ -1,0 +1,18 @@
+## rank, dense_rank, row_number ##
+select *, rank() over(order by sales desc) rnk, 
+  dense_rank() over(order by sales desc) dns_rnk, 
+  row_number() over(order by sales desc) row_num 
+  from Sales.
+
+
+## rows_between ##
+select *, sum(sales) over(order by date rows between 3 preeceding and 3 following)
+  from Sales
+
+
+
+## runnning sum ##
+select *, sum(sales) over(order by date rows between unbound preeceding and current row)
+  from Sales
+
+
